@@ -16,7 +16,7 @@ from telegram.ext import (
 # ── Настройки ─────────────────────────────────────────────────────────────────
 
 TOKEN    = "8720934363:AAFQhKcr9iAsDykPq1J7uJFIIKq3w4hb4PM"
-SITE_URL = "https://loca.lt"
+SITE_URL = "https://detective14.github.io/AudioPlayer/"
 
 # ── Тексты сообщений ──────────────────────────────────────────────────────────
 
