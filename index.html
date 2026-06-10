@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АудиоСервис</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container">
+      <h1>АудиоСервис</h1>
+      <p class="tagline">Загрузи и слушай свои треки прямо в браузере</p>
+      <a href="https://t.me/audiopleerbot" class="btn-primary" target="_blank">
+        Открыть в мессенджере
+      </a>
+    </div>
+  </header>
+
+  <!-- Описание сервиса -->
+  <section class="about">
+    <div class="container">
+      <h2>О сервисе</h2>
+      <p>
+        АудиоСервис — платформа для воспроизведения аудиофайлов прямо в браузере.
+        Выберите WAV или MP3 файл на вашем устройстве и слушайте его без регистрации
+        и загрузки на сервер. Ваши файлы остаются только у вас.
+      </p>
+      <ul class="features">
+        <li>Поддержка форматов WAV, MP3, OGG</li>
+        <li>Управление воспроизведением: Play, Pause, Stop</li>
+        <li>Файлы не покидают ваш браузер</li>
+        <li>Адаптивный дизайн для мобильных и ПК</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Плеер -->
+  <section class="player-section">
+    <div class="container">
+      <h2>Плеер</h2>
+      <div class="player-card">
+        <label class="file-label" for="audioFile">
+          Выбрать аудиофайл
+        </label>
+        <input type="file" id="audioFile" accept=".wav,.mp3,.ogg">
+        <p id="fileName" class="file-name">Файл не выбран</p>
+
+        <audio id="player"></audio>
+
+        <div class="progress-wrap">
+          <span id="currentTime">0:00</span>
+          <input type="range" id="progressBar" value="0" min="0" step="0.1">
+          <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+          <button id="btnPlay" class="ctrl-btn" title="Play">&#9654;</button>
+          <button id="btnPause" class="ctrl-btn" title="Pause">&#9646;&#9646;</button>
+          <button id="btnStop" class="ctrl-btn" title="Stop">&#9632;</button>
+        </div>
+
+        <div class="volume-wrap">
+          <label for="volume">Громкость:</label>
+          <input type="range" id="volume" min="0" max="1" step="0.05" value="1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>АудиоСервис &copy; 2026</p>
+      <a href="https://t.me/audiopleerbot" target="_blank">
+        Наш бот в мессенджере
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
